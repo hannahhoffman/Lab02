@@ -23,3 +23,15 @@ class ReadFile
 
 
 #endif
+
+	public: //put the functions in the public section
+		ReadFile (const char* file_name); //constructor
+		
+		String* readLine();
+		bool eof();
+		void close();
+
+};
+
+
+#endif
