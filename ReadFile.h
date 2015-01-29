@@ -10,7 +10,7 @@ class ReadFile
 {
 	private: //change to private so the users can't access it
 		ifstream input_file;
-		  bool _eof;
+		       bool _eof;
 		 bool closed;
 	public: //put the functions in the public section
 		ReadFile (const char* file_name); //constructor
