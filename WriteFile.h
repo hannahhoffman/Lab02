@@ -8,11 +8,11 @@ using namespace std;
 
 class WriteFile
 {
-	private:
+	private: //change to private so the users can't access it
 	  ofstream output_file;
 	  bool closed;
-	public:
-		WriteFile (const char* file_name);
+	public: //put the functions in public 
+		WriteFile (const char* file_name); //constructor 
 
 		void writeLine(String* line);
 		void close();
