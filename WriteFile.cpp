@@ -1,13 +1,13 @@
 #include "WriteFile.h"
 #include <sstream>
 
-WriteFile::WriteFile(const char* file_name)
+WriteFile::WriteFile(const char* file_name) //constructor
 {
    output_file.open(file_name);
    closed = false;
 }
 
-void WriteFile::close()
+void WriteFile::close() //close the file
 {
    if (!closed)
    {
@@ -16,7 +16,7 @@ void WriteFile::close()
    }
 }
 
-void WriteFile::writeLine(String* line)
+void WriteFile::writeLine(String* line) //write into the file
 {
    if (!closed && line->length() > 0)
    {

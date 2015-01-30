@@ -13,9 +13,10 @@ class WriteFile
 	  bool closed;
 	public: //put the functions in public 
 		WriteFile (const char* file_name); //constructor 
+		//a destructor isn't needed because the pointers are deleted in main
 
-		void writeLine(String* line);
-		void close();
+		void writeLine(String* line); //you have to pass the line you want to write
+		void close(); //close the file
 
 };
 
