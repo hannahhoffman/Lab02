@@ -1,3 +1,10 @@
+//! Class to write into the file
+/*!
+ * The WriteFile class accepts a character through the constructor.
+ * The constructor opens a file with the given name. 
+ */
+
+
 #if !defined WRITE_FILE
 #define WRITE_FILE
 
