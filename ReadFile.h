@@ -26,16 +26,3 @@ class ReadFile
 
 
 #endif
-
-	public: //put the functions in the public section
-		ReadFile (const char* file_name); //constructor
-		 //a destructor isn't needed because the pointers are deleted in main
-
-		String* readLine();//read the line in the file
-		bool eof();
-		void close(); //close the file
-
-};
-
-
-#endif
