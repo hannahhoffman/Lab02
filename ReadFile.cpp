@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-ReadFile::ReadFile(const char* file_name)
+ReadFile::ReadFile(const char* file_name) //constructor
 {
    input_file.open(file_name);
    closed = false;
@@ -15,7 +15,7 @@ bool ReadFile::eof()
    return _eof;
 }
 
-void ReadFile::close()
+void ReadFile::close() //close the file
 {
    if (!closed)
    {
@@ -24,7 +24,7 @@ void ReadFile::close()
    }
 }
 
-String* ReadFile::readLine()
+String* ReadFile::readLine() //read the line in the file
 {
    if (closed) return NULL;
    if (_eof) return NULL;
